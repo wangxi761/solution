@@ -22,7 +22,6 @@ public class ListNode {
 		}
 		return head.next;
 	}
-
 	
 	public String getList() {
 		List<Integer> list=new ArrayList<>();
