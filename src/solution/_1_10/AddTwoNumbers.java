@@ -1,15 +1,8 @@
 package solution._1_10;
 
+import solution.common.ListNode;
+
 public class AddTwoNumbers {
-	public class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
-	}
-
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode li = new ListNode(0);
 		ListNode head=li;

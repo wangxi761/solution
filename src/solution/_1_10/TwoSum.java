@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import solution.common.ListNode;
+
 public class TwoSum {
 	public void test() {
 		int[] a = { 3, 9, 9, 9, 9, 9, 9, 9, 9, 9 };
@@ -61,14 +63,6 @@ public class TwoSum {
 		return new int[] {};
 	}
 
-	public class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
-	}
 
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		long a = convert(l1), b = convert(l2);
