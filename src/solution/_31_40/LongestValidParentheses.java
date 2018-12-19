@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class LongestValidParentheses {
 
-	public int longestValidParentheses(String s) {
+	public int longestValidParenthesesI(String s) {
 		Stack<Character> s1 = new Stack<Character>();
 		Stack<Character> s2 = new Stack<Character>();
 		int max = 0;
@@ -34,8 +34,24 @@ public class LongestValidParentheses {
 
 	@Test
 	public void test() throws Exception {
-		int max = longestValidParentheses("()(()");
+		int max = longestValidParentheses("(())");
 		System.out.println(max);
+	}
+
+	public int longestValidParentheses(String s) {
+		int max = 0;
+		int[] dp = new int[s.length()];
+		for (int i = 1; i < s.length(); i++) {
+			if (s.charAt(i) == ')') {
+				if (s.charAt(i - 1) == '(') {
+					dp[i] = i - 2 > 0 ? dp[i - 2] + 2 : 2;
+				} else if(i-dp[i-1]>0&&s.charAt(i-dp[i-1]-1)=='('){
+					dp[i] = dp[i - 1] +((i - dp[i - 1])>=2?dp[i - dp[i - 1] - 2]:0) + 2 ;
+				}
+				max = max > dp[i] ? max : dp[i];
+			}
+		}
+		return max;
 	}
 
 }
