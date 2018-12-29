@@ -10,9 +10,9 @@ public class FindFirstandLastPositionofElementinSortedArray {
 
 	@Test
 	public void test() throws Exception {
-		int[] searchRange = searchRange(new int[] {2,2}, 3);
-		String str = Arrays.toString(searchRange);
-		System.out.println(str);
+		int[] arr= {2,2};
+		int[] searchRange = searchRange(arr, 3);
+		System.out.println(Arrays.toString(searchRange));
 	}
 
 	public int[] searchRange(int[] nums, int target) {
@@ -20,16 +20,17 @@ public class FindFirstandLastPositionofElementinSortedArray {
 			return new int[] {-1,-1}; 
 		}
 		int left=extremeInsertionIndex(nums, target);
-		if(nums[left]!=target||left==nums.length) {
+		if(left>=nums.length||nums[left]!=target||left==nums.length) {
 			return new int[] {-1,-1};
 		}
-		return new int[] {left,extremeInsertionIndex(nums, target+1)-1};
+		int right=extremeInsertionIndex(nums, target+1)-1;
+		return new int[] {left,right};
 	}
 
 	private int extremeInsertionIndex(int[] nums, int target) {
 		int lo = 0, hi = nums.length;
 		while (lo < hi) {
-			int mid =  lo + (hi-lo)/2 ;
+			int mid =  (lo+hi)/2 ;
 			if (nums[mid] < target) {
 				lo = mid + 1;
 			} else {
