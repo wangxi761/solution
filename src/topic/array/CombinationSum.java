@@ -31,8 +31,8 @@ public class CombinationSum {
 
     @Test
     public void test() {
-        int[] arrs={2,3,6,7};
+        int[] array={2,3,6,7};
         int target=7;
-        System.out.println(combinationSum(arrs,target));
+        System.out.println(combinationSum(array,target));
     }
 }

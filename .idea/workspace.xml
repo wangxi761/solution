@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b7c35a-bc60-4793-9baf-d51fa3333590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/topic/array/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/topic/array/CombinationSumII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/solution/_21_30/MergekSortedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/solution/_21_30/MergekSortedLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/solution/common/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/solution/common/ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/solution.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/topic/array/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/array/CombinationSum.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,25 +21,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -59,6 +45,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/solution/_31_40/SearchInsertPosition35.java" />
         <option value="$PROJECT_DIR$/src/topic/array/CombinationSum.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/CombinationSumIITest.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/CombinationSumII.java" />
       </list>
     </option>
   </component>
@@ -77,7 +65,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -99,12 +86,20 @@
             </path>
             <path>
               <item name="solution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="solution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="solution" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,14 +107,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544342467115" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="topic.array" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,7 +142,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CombinationSumII">
+    <configuration name="CombinationSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="topic.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="topic.array" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.CombinationSum" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinationSumII" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="topic.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="topic.array" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.CombinationSumII" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CombinationSum.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solution" />
       <extension name="coverage">
@@ -152,6 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CombinationSumII" />
+        <item itemvalue="JUnit.CombinationSum" />
         <item itemvalue="JUnit.CombinationSum.test" />
       </list>
     </recent_temporary>
@@ -171,6 +212,7 @@
       <workItem from="1553932992226" duration="1985000" />
       <workItem from="1554371191132" duration="593000" />
       <workItem from="1554733156661" duration="3649000" />
+      <workItem from="1554822246925" duration="2864000" />
     </task>
     <servers />
   </component>
@@ -181,34 +223,63 @@
     <history-entry file="CombinationSum_test - 2019.04.09 at 00h 03m 48s.xml">
       <configuration name="CombinationSum.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CombinationSum - 2019.04.09 at 23h 04m 29s.xml">
+      <configuration name="CombinationSum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSum - 2019.04.09 at 23h 05m 59s.xml">
+      <configuration name="CombinationSum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSum - 2019.04.09 at 23h 12m 26s.xml">
+      <configuration name="CombinationSum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSumII - 2019.04.09 at 23h 44m 26s.xml">
+      <configuration name="CombinationSumII" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSumII - 2019.04.09 at 23h 45m 10s.xml">
+      <configuration name="CombinationSumII" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSumII - 2019.04.09 at 23h 45m 28s.xml">
+      <configuration name="CombinationSumII" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CombinationSumII - 2019.04.09 at 23h 50m 30s.xml">
+      <configuration name="CombinationSumII" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6520000" />
+    <option name="totallyTimeSpent" value="9384000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1363275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13712242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298887" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298887" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298887" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3298887" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3298887" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -246,10 +317,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="530" column="30" selection-start-line="530" selection-start-column="30" selection-end-line="530" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="1478" column="31" selection-start-line="1478" selection-start-column="21" selection-end-line="1478" selection-end-column="31" />
+        <state relative-caret-position="494">
+          <caret line="4097" column="35" selection-start-line="4097" selection-start-column="24" selection-end-line="4097" selection-end-column="35" />
           <folding>
             <element signature="e#5126#5127#0" expanded="true" />
             <element signature="e#5197#5198#0" expanded="true" />
@@ -257,10 +342,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/solution.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSumIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="425">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSumII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="28" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
