@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b7c35a-bc60-4793-9baf-d51fa3333590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/topic/array/CombinationSumII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/topic/array/TrappingRainWater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/solution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/topic/array/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/topic/array/CombinationSum.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +19,26 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/topic/array/TrappingRainWater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +49,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wx" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -47,6 +63,8 @@
         <option value="$PROJECT_DIR$/src/topic/array/CombinationSum.java" />
         <option value="$PROJECT_DIR$/src/topic/array/CombinationSumIITest.java" />
         <option value="$PROJECT_DIR$/src/topic/array/CombinationSumII.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/FirstMissingPositive.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/TrappingRainWater.java" />
       </list>
     </option>
   </component>
@@ -120,7 +138,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -142,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CombinationSumII">
+  <component name="RunManager" selected="JUnit.TrappingRainWater.trap1">
     <configuration name="CombinationSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solution" />
       <extension name="coverage">
@@ -173,7 +191,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombinationSum.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstMissingPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solution" />
       <extension name="coverage">
         <pattern>
@@ -182,8 +200,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="topic.array" />
-      <option name="MAIN_CLASS_NAME" value="topic.array.CombinationSum" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.FirstMissingPositive" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappingRainWater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="topic.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="topic.array" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.TrappingRainWater" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrappingRainWater.trap1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="topic.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="topic.array" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.TrappingRainWater" />
+      <option name="METHOD_NAME" value="trap1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,9 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrappingRainWater.trap1" />
+        <item itemvalue="JUnit.TrappingRainWater" />
+        <item itemvalue="JUnit.FirstMissingPositive" />
         <item itemvalue="JUnit.CombinationSumII" />
         <item itemvalue="JUnit.CombinationSum" />
-        <item itemvalue="JUnit.CombinationSum.test" />
       </list>
     </recent_temporary>
   </component>
@@ -212,17 +262,26 @@
       <workItem from="1553932992226" duration="1985000" />
       <workItem from="1554371191132" duration="593000" />
       <workItem from="1554733156661" duration="3649000" />
-      <workItem from="1554822246925" duration="2864000" />
+      <workItem from="1554822246925" duration="5994000" />
     </task>
+    <task id="LOCAL-00001" summary="0409">
+      <created>1554825318259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554825318259</updated>
+    </task>
+    <task id="LOCAL-00002" summary="0410">
+      <created>1554826481912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554826481912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CombinationSum_test - 2019.04.09 at 00h 02m 52s.xml">
-      <configuration name="CombinationSum.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CombinationSum_test - 2019.04.09 at 00h 03m 48s.xml">
-      <configuration name="CombinationSum.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CombinationSum - 2019.04.09 at 23h 04m 29s.xml">
       <configuration name="CombinationSum" configurationId="JUnit" />
     </history-entry>
@@ -244,9 +303,18 @@
     <history-entry file="CombinationSumII - 2019.04.09 at 23h 50m 30s.xml">
       <configuration name="CombinationSumII" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstMissingPositive - 2019.04.10 at 00h 07m 01s.xml">
+      <configuration name="FirstMissingPositive" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrappingRainWater - 2019.04.10 at 23h 52m 56s.xml">
+      <configuration name="TrappingRainWater" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrappingRainWater - 2019.04.10 at 23h 55m 37s.xml">
+      <configuration name="TrappingRainWater" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9384000" />
+    <option name="totallyTimeSpent" value="12514000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -259,6 +327,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13712242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -270,14 +339,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298887" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399841" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.399841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298887" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298887" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298887" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3298887" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3298887" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -294,6 +363,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0409" />
+    <MESSAGE value="0410" />
+    <option name="LAST_COMMIT_MESSAGE" value="0410" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/solution/_31_40/SearchInsertPosition35.java">
@@ -366,6 +441,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/FirstMissingPositive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/TrappingRainWater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
