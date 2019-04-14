@@ -12,7 +12,9 @@ public class MaximumSubarray {
         for (int i = 1; i < dp.length; i++) {
             dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
         }
-        return Arrays.stream(dp).max().getAsInt();
+        return Arrays.stream(dp)
+                     .max()
+                     .getAsInt();
     }
 
     public int maxSubArray2(int[] nums) {
