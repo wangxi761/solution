@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3b7c35a-bc60-4793-9baf-d51fa3333590" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/topic/array/MaximumSubarray.java" afterDir="false" />
+    <list default="true" id="8c1362d2-ca8f-473c-a43b-620f7e00a6dd" name="Default Changelist" comment="0414">
+      <change afterPath="$PROJECT_DIR$/src/topic/array/JumpGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,21 +17,28 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="solution" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/topic/array/MaximumSubarray.java">
+        <entry file="file://$PROJECT_DIR$/src/topic/array/JumpGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/topic/array/JumpGameII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -40,36 +48,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>desc</find>
-      <find>descending</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="wx" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/solution/_31_40/SearchInsertPosition35.java" />
-        <option value="$PROJECT_DIR$/src/topic/array/CombinationSum.java" />
-        <option value="$PROJECT_DIR$/src/topic/array/CombinationSumIITest.java" />
-        <option value="$PROJECT_DIR$/src/topic/array/CombinationSumII.java" />
-        <option value="$PROJECT_DIR$/src/topic/array/FirstMissingPositive.java" />
-        <option value="$PROJECT_DIR$/src/topic/array/TrappingRainWater.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/topic/array/MaximumSubarray.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/SpiralMatrix.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/JumpGameTest.java" />
+        <option value="$PROJECT_DIR$/src/topic/array/JumpGame.java" />
       </list>
     </option>
   </component>
@@ -84,12 +78,11 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <autoscrollToSource ProjectPane="true" />
-      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,33 +108,29 @@
               <item name="topic" type="462c0819:PsiDirectoryNode" />
               <item name="array" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="solution" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544342467115" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -150,6 +139,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="MaximumSubarray" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -163,8 +157,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MaximumSubarray">
-    <configuration name="FirstMissingPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JumpGame">
+    <configuration name="JumpGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solution" />
       <extension name="coverage">
         <pattern>
@@ -173,7 +167,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="topic.array" />
-      <option name="MAIN_CLASS_NAME" value="topic.array.FirstMissingPositive" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.JumpGame" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,7 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrappingRainWater" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpiralMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="solution" />
       <extension name="coverage">
         <pattern>
@@ -203,51 +197,17 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="topic.array" />
-      <option name="MAIN_CLASS_NAME" value="topic.array.TrappingRainWater" />
+      <option name="MAIN_CLASS_NAME" value="topic.array.SpiralMatrix" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrappingRainWater.trap1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="solution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="topic.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="topic.array" />
-      <option name="MAIN_CLASS_NAME" value="topic.array.TrappingRainWater" />
-      <option name="METHOD_NAME" value="trap1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrappingRainWater.trapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="solution" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="topic.array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="topic.array" />
-      <option name="MAIN_CLASS_NAME" value="topic.array.TrappingRainWater" />
-      <option name="METHOD_NAME" value="trapTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JumpGame" />
+        <item itemvalue="JUnit.SpiralMatrix" />
         <item itemvalue="JUnit.MaximumSubarray" />
-        <item itemvalue="JUnit.TrappingRainWater" />
-        <item itemvalue="JUnit.TrappingRainWater.trapTest" />
-        <item itemvalue="JUnit.TrappingRainWater.trap1" />
-        <item itemvalue="JUnit.FirstMissingPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -256,266 +216,136 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3b7c35a-bc60-4793-9baf-d51fa3333590" name="Default Changelist" comment="" />
-      <created>1544342287905</created>
+      <changelist id="8c1362d2-ca8f-473c-a43b-620f7e00a6dd" name="Default Changelist" comment="" />
+      <created>1555141642902</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1544342287905</updated>
-      <workItem from="1544342291029" duration="224000" />
-      <workItem from="1553773184956" duration="69000" />
-      <workItem from="1553932992226" duration="1985000" />
-      <workItem from="1554371191132" duration="593000" />
-      <workItem from="1554733156661" duration="3649000" />
-      <workItem from="1554822246925" duration="9928000" />
-      <workItem from="1555140465153" duration="1009000" />
+      <updated>1555141642902</updated>
+      <workItem from="1555141644027" duration="10382000" />
     </task>
-    <task id="LOCAL-00001" summary="0409">
-      <created>1554825318259</created>
+    <task id="LOCAL-00001" summary="0414">
+      <created>1555229910776</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1554825318259</updated>
+      <updated>1555229910776</updated>
     </task>
-    <task id="LOCAL-00002" summary="0410">
-      <created>1554826481912</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1554826481912</updated>
-    </task>
-    <task id="LOCAL-00003" summary="0410">
-      <created>1554911833583</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1554911833583</updated>
-    </task>
-    <task id="LOCAL-00004" summary="0413">
-      <created>1555127387486</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1555127387486</updated>
-    </task>
-    <task id="LOCAL-00005" summary="0413">
-      <created>1555127425932</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1555127425932</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MaximumSubarray - 2019.04.13 at 13h 14m 47s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="SpiralMatrix - 2019.04.14 at 00h 56m 32s.xml">
+      <configuration name="SpiralMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 13h 15m 28s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="SpiralMatrix - 2019.04.14 at 01h 07m 06s.xml">
+      <configuration name="SpiralMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 13h 16m 37s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="SpiralMatrix - 2019.04.14 at 01h 07m 41s.xml">
+      <configuration name="SpiralMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 37m 26s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="SpiralMatrix - 2019.04.14 at 01h 07m 53s.xml">
+      <configuration name="SpiralMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 37m 45s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="SpiralMatrix - 2019.04.14 at 01h 10m 49s.xml">
+      <configuration name="SpiralMatrix" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 41m 06s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="JumpGame - 2019.04.15 at 23h 14m 23s.xml">
+      <configuration name="JumpGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 41m 26s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="JumpGame - 2019.04.15 at 23h 16m 35s.xml">
+      <configuration name="JumpGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 41m 59s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="JumpGame - 2019.04.15 at 23h 23m 30s.xml">
+      <configuration name="JumpGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 42m 19s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="JumpGame - 2019.04.15 at 23h 30m 22s.xml">
+      <configuration name="JumpGame" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MaximumSubarray - 2019.04.13 at 15h 42m 23s.xml">
-      <configuration name="MaximumSubarray" configurationId="JUnit" />
+    <history-entry file="JumpGame - 2019.04.15 at 23h 30m 41s.xml">
+      <configuration name="JumpGame" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20011000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="10382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49940687" visible="true" weight="0.14069952" />
-      <window_info id="Structure" order="1" sideWeight="0.5005931" side_tool="true" weight="0.13950716" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5005931" side_tool="true" weight="0.13950716" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3298887" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298887" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.399841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298887" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298887" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298887" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3298887" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0409" />
-    <MESSAGE value="0410" />
-    <MESSAGE value="0413" />
-    <option name="LAST_COMMIT_MESSAGE" value="0413" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="0414" />
+    <option name="LAST_COMMIT_MESSAGE" value="0414" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/solution/_31_40/SearchInsertPosition35.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/solution/_771_780/JewelsandStones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="530" column="30" selection-start-line="530" selection-start-column="30" selection-end-line="530" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="4097" column="35" selection-start-line="4097" selection-start-column="24" selection-end-line="4097" selection-end-column="35" />
-          <folding>
-            <element signature="e#5126#5127#0" expanded="true" />
-            <element signature="e#5197#5198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solution.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSumIITest.java" />
-    <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/array/CombinationSumII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/array/FirstMissingPositive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/topic/array/TrappingRainWater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/IntStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="634" column="16" selection-start-line="634" selection-start-column="16" selection-end-line="634" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/topic/array/MaximumSubarray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="544">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/SpiralMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="37" column="22" selection-start-line="9" selection-start-column="8" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/JumpGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/JumpGameII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/topic/array/JumpGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -539,7 +369,6 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -562,7 +391,6 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>ruby-2.6.1-p33</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -574,7 +402,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>solution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
