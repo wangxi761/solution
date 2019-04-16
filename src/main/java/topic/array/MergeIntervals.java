@@ -1,34 +1,13 @@
 package topic.array;
 
 import org.junit.Test;
+import struct.Interval;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class MergeIntervals {
-    public class Interval {
-        int start;
-        int end;
-
-        Interval() {
-            start = 0;
-            end = 0;
-        }
-
-        Interval(int s, int e) {
-            start = s;
-            end = e;
-        }
-
-        @Override
-        public String toString() {
-            return "Interval{" +
-                    "start=" + start +
-                    ", end=" + end +
-                    '}';
-        }
-    }
 
     public List<Interval> merge(List<Interval> intervals) {
         if(intervals.size()<=1)
