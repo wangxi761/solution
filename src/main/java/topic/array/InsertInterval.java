@@ -67,7 +67,7 @@ public class InsertInterval {
 
     @Test
     public void test() {
-        List<Interval> list = new ArrayList<>() {{
+        List<Interval> list = new ArrayList() {{
             add(new Interval(1, 2));
             add(new Interval(3, 5));
             add(new Interval(6, 7));

@@ -6,3 +6,4 @@ bin
 /.classpath
 /bin/
 /.idea/workspace.xml
+/target
