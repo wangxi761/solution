@@ -9,8 +9,11 @@ public class LargestRectangleinHistogramTest {
 	@Test
 	public void test() {
 		LargestRectangleinHistogram histogram=new LargestRectangleinHistogram();
-		int[] arr= {2,1,5,6,2,3};
-		assertEquals(10, histogram.largestRectangleArea(arr));
+//		assertEquals(10, histogram.largestRectangleArea(new int[]{2,1,5,6,2,3}));
+//		assertEquals(1, histogram.largestRectangleArea(new int[]{1}));
+//		assertEquals(2, histogram.largestRectangleArea(new int[]{2,0,2}));
+		assertEquals(3, histogram.largestRectangleArea(new int[]{2, 1, 2}));
+
 	}
 
 }
