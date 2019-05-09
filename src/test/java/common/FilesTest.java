@@ -15,7 +15,7 @@ import java.util.concurrent.CountDownLatch;
 
 import org.junit.Test;
 
-public class CommonTest {
+public class FilesTest {
 
 	Path p1 = Paths.get("C:", "/Users/ccf/Desktop", "2", "1.txt");
 	Path p2 = Paths.get("C:", "/Users/ccf/Desktop", "2", "2.txt");
