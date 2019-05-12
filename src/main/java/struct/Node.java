@@ -8,6 +8,10 @@ public class Node {
 	public Node() {
 	}
 
+	public Node(int val) {
+		this.val = val;
+	}
+
 	public Node(int _val, Node _left, Node _right, Node _next) {
 		val = _val;
 		left = _left;
