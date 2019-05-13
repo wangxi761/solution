@@ -9,4 +9,11 @@ public class TreeNode {
 		val = x;
 	}
 
+	public TreeNode(int val, TreeNode left, TreeNode right) {
+		super();
+		this.val = val;
+		this.left = left;
+		this.right = right;
+	}
+
 }
