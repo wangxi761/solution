@@ -26,6 +26,7 @@ public class SortTest {
 			{Arrays.copyOf(array, array.length),new BubbleSort()},
 			{Arrays.copyOf(array, array.length),new InsertionSort()},
 			{Arrays.copyOf(array, array.length),new QuickSort()},
+			{Arrays.copyOf(array, array.length),new MergeSort()},
 			{Arrays.copyOf(array, array.length),new BucketSort()}
 		});
 	}
