@@ -1,7 +1,7 @@
 package study.tree.binarySearchTree;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.NavigableSet;
+import java.util.TreeSet;
 
 public class ContainsDuplicateIII {
 	public boolean containsNearbyAlmostDuplicate1(int[] nums, int k, int t) {
@@ -16,9 +16,22 @@ public class ContainsDuplicateIII {
 	}
 
 	public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-		Map<Long, Long> map = new HashMap<>();
-		for (int num : nums) {
+		if (nums == null || nums.length == 0 || k < 1 || t < 0) {
+			return false;
 		}
-		return true;
+		NavigableSet<Long> set = new TreeSet<>();
+		for (int i = 0; i < nums.length; i++) {
+			Long left = (long) nums[i] - t;
+			Long right = (long) nums[i] + t;
+			NavigableSet<Long> subSet = set.subSet(left, true, right, true);
+			if (!subSet.isEmpty()) {
+				return true;
+			}
+			set.add((long) nums[i]);
+			if (i>=k) {
+				set.remove((long) nums[i - k]);
+			}
+		}
+		return false;
 	}
 }
