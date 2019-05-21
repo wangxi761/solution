@@ -5,7 +5,7 @@ import java.util.List;
 
 public class GoatLatin {
 	public String toGoatLatin(String S) {
-		List<Character> list = Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
+		List<Character> list = Arrays.asList('e', 'a', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
 		String[] ss = S.split(" ");
 		for (int i = 0; i < ss.length; i++) {
 			if (!list.contains(ss[i].charAt(0))) {
