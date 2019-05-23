@@ -2,19 +2,19 @@ package topic.string;
 
 public class PalindromicSubstrings {
 	public int countSubstrings(String s) {
-		int length = s.length();
-		int[][] dp = new int[length][length];
-		for (int i = length - 1; i >= 0; i--) {
-			dp[i][i] = 1;
-			for (int j = i + 1; j < dp.length; j++) {
+		int len = s.length(), count = 0;
+		boolean[][] dp = new boolean[len][len];
+		for (int d = 0; d < len; d++) {
+			for (int i = 0; i + d < len; i++) {
+				int j = i + d;
 				if (s.charAt(i) == s.charAt(j)) {
-					dp[i][j] = dp[i + 1][j] + dp[i][j - 1] + 1;
-				} else {
-					dp[i][j] = dp[i + 1][j] + dp[i][j - 1] - dp[i + 1][j - 1];
+					dp[i][j] = (i + 1 >= j - 1) ? true : dp[i + 1][j - 1];
+					if (dp[i][j] == true)
+						count++;
 				}
 			}
 		}
-		return dp[0][length - 1]-1;
+		return count;
 	}
 
 	public int countSubstrings2(String s) {

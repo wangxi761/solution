@@ -9,7 +9,7 @@ public class PalindromicSubstringsTest {
 	@Test
 	public void testCountSubstrings() {
 //		assertEquals(6, test.countSubstrings("abc"));
-		System.out.println(test.countSubstrings("aba"));
+		System.out.println(test.countSubstrings("aaa"));
 	}
 
 }
