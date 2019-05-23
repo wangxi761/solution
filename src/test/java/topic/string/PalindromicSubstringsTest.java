@@ -8,7 +8,7 @@ public class PalindromicSubstringsTest {
 	PalindromicSubstrings test=new PalindromicSubstrings();
 	@Test
 	public void testCountSubstrings() {
-		test.countSubstrings("hello");
+		assertEquals(6, test.countSubstrings("abc"));
 	}
 
 }
