@@ -1,16 +1,7 @@
 package solution._1_10;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
 public class LongestPalindromicSubstring {
 	
-	
-	@Test
-	public void test() throws Exception {
-		System.out.println(longestPalindrome("abcda"));
-	}
 	
 	public String longestPalindrome(String s) {
 		char[] str=s.toCharArray();
