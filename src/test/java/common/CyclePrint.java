@@ -13,14 +13,86 @@ public class CyclePrint {
 	
 	private final List<Character> list = List.of('a', 'e', 'i', 'o', 'u');
 	
-	int num = 0;
+	char[] chs = {'a', 'b', 'c'};
+	int num = 0, count = 0;
 	AtomicInteger atomic = new AtomicInteger(0);
 	
 	@Test
 	public void test() throws InterruptedException {
-	
+		CountDownLatch latch = new CountDownLatch(3);
+		ReentrantLock lock = new ReentrantLock();
+		Condition a = lock.newCondition();
+		Condition b = lock.newCondition();
+		Condition c = lock.newCondition();
+		String template = "{0} {1} {2}";
+		new Thread(() -> {
+			int i = 0;
+			while (i < 10) {
+				lock.lock();
+				try {
+					if (num == 0) {
+						System.out.println(MessageFormat.format(template, Thread.currentThread()
+						                                                        .getName(), String.valueOf(chs[num]), String.valueOf(count++)));
+						num = 1;
+						i++;
+						b.signal();
+					} else {
+						a.await();
+					}
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} finally {
+					lock.unlock();
+				}
+			}
+			latch.countDown();
+		}).start();
+		new Thread(() -> {
+			int i = 0;
+			while (i < 10) {
+				lock.lock();
+				try {
+					if (num == 1) {
+						System.out.println(MessageFormat.format(template, Thread.currentThread()
+						                                                        .getName(), String.valueOf(chs[num]), String.valueOf(count++)));
+						num = 2;
+						i++;
+						c.signal();
+					} else {
+						b.await();
+					}
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} finally {
+					lock.unlock();
+				}
+			}
+			latch.countDown();
+		}).start();
+		new Thread(() -> {
+			int i = 0;
+			while (i < 10) {
+				lock.lock();
+				try {
+					if (num == 2) {
+						System.out.println(MessageFormat.format(template, Thread.currentThread()
+						                                                        .getName(), String.valueOf(chs[num]), String.valueOf(count++)));
+						num = 0;
+						i++;
+						a.signal();
+					} else {
+						c.await();
+					}
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} finally {
+					lock.unlock();
+				}
+			}
+			latch.countDown();
+		}).start();
+		latch.await();
 	}
-	
 	
 	@Test
 	public void test2() throws InterruptedException {
