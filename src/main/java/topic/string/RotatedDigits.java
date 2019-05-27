@@ -12,18 +12,24 @@ public class RotatedDigits {
 	
 	public int rotatedDigits(int N) {
 		int[] dp = new int[N + 1];
-		for (int i = 0; i < 9; i++) {
+		int count = 0;
+		for (int i = 0; i < N + 1; i++) {
 			if (i == 3 || i == 7 || i == 4) {
 				dp[i] = 0;
 			} else if (i == 0 || i == 1 || i == 8) {
 				dp[i] = 1;
-			} else {
+			} else if (i == 2 || i == 5 || i == 6 || i == 9) {
 				dp[i] = 2;
+			} else if (dp[i / 10] == 0 || dp[i % 10] == 0) {
+				dp[i] = 0;
+			} else if (dp[i / 10] + dp[i % 10] > 2) {
+				dp[i] = 2;
+			} else {
+				dp[i] = 1;
 			}
+			if (dp[i] == 2) count++;
 		}
-		
-		
-		return dp[N];
+		return count;
 	}
 	
 	

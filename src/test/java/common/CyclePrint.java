@@ -3,6 +3,7 @@ package common;
 import org.junit.Test;
 
 import java.text.MessageFormat;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -11,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class CyclePrint {
 	
-	private final List<Character> list = List.of('a', 'e', 'i', 'o', 'u');
+	private final List<Character> list = Arrays.asList('a', 'e', 'i', 'o', 'u');
 	
 	char[] chs = {'a', 'b', 'c'};
 	int num = 0, count = 0;
