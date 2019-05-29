@@ -9,17 +9,21 @@ public class MinimumTimeDifference {
 			String[] split = str.split(":");
 			dp[Integer.valueOf(split[0]) * 60 + Integer.valueOf(split[1])] = 1;
 		}
-		int min = 0, cur = 0, last = dp[0];
-		for (int i : dp) {
-			if (i == 0 && last == 0) {
+		int min = Integer.MAX_VALUE, cur = 0, last = dp[0];
+		for (int i = 0; i < dp.length; i++) {
+			if (dp[i] == last) {
 				cur++;
-			} else if (i == 1 && last == 0) {
-				min = Math.min(min, cur);
-				cur = 0;
-			} else if (i == 0 && last == 1) {
-				cur = 1;
+				last = dp[i];
+			} else {
+				if (dp[i] == 0) {
+					min = Math.min(min, cur);
+				} else {
+					cur = 1;
+				}
 			}
 		}
+		if (dp[dp.length - 1] == dp[0] && dp[0] == 1)
+			min = Math.min(1, min);
 		return min;
 	}
 }
