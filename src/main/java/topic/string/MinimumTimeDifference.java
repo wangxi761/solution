@@ -7,23 +7,17 @@ public class MinimumTimeDifference {
 		int[] dp = new int[24 * 60];
 		for (String str : timePoints) {
 			String[] split = str.split(":");
-			dp[Integer.valueOf(split[0]) * 60 + Integer.valueOf(split[1])] = 1;
+			if (++dp[Integer.valueOf(split[0]) * 60 + Integer.valueOf(split[1])] > 1) return 0;
 		}
-		int min = Integer.MAX_VALUE, cur = 0, last = dp[0];
-		for (int i = 0; i < dp.length; i++) {
-			if (dp[i] == last) {
-				cur++;
-				last = dp[i];
-			} else {
-				if (dp[i] == 0) {
-					min = Math.min(min, cur);
-				} else {
-					cur = 1;
-				}
-			}
+		int pre = 0, min = Integer.MAX_VALUE;
+		while (pre < dp.length && dp[pre] == 0) pre++;
+		int firtst = pre;
+		
+		for (int i = pre + 1; i < dp.length; i++) {
+			if (dp[i] == 0) continue;
+			min = Math.min(min, i - pre);
+			pre = i;
 		}
-		if (dp[dp.length - 1] == dp[0] && dp[0] == 1)
-			min = Math.min(1, min);
-		return min;
+		return Math.min(min, 24 * 60 + firtst - pre);
 	}
 }
