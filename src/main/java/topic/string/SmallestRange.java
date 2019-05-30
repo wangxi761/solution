@@ -1,30 +1,47 @@
 package topic.string;
 
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.PriorityQueue;
 
 public class SmallestRange {
+	public class Element {
+		int val;
+		int bucket;
+		int id;
+		
+		public Element(int val, int bucket, int id) {
+			this.val = val;
+			this.bucket = bucket;
+			this.id = id;
+		}
+	}
+	
 	public int[] smallestRange(List<List<Integer>> nums) {
-		Map<Integer, Integer> map = new TreeMap<>();
+		PriorityQueue<Element> queue = new PriorityQueue<>((a, b) -> a.val - b.val);
+		int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
 		for (int i = 0; i < nums.size(); i++) {
-			for (int j = 0; j < nums.get(i)
-			                        .size(); j++) {
-				map.put(nums.get(i)
-				            .get(j), i);
+			Element e = new Element(nums.get(i).get(0), i, 0);
+			queue.offer(e);
+			max = Math.max(max, e.val);
+		}
+		int range = Integer.MAX_VALUE;
+		int start = -1, end = -1;
+		while (queue.size() == nums.size()) {
+			Element cur = queue.poll();
+			if (max - cur.val < range) {
+				range = max - cur.val;
+				start = cur.val;
+				end = max;
+			}
+			if (cur.id + 1 < nums.get(cur.bucket).size()) {
+				cur.id++;
+				cur.val = nums.get(cur.bucket).get(cur.id);
+				queue.offer(cur);
+				if (cur.val > max) {
+					max = cur.val;
+				}
 			}
 		}
-		int i = 0, j = map.size();
-		while (i < map.size() && j >= 0 && i < j && map.values()
-		                                               .size() == nums.size()) {
-			map.remove(i++);
-		}
-		i--;
-		while (i < map.size() && j >= 0 && i < j && map.values()
-		                                               .size() == nums.size()) {
-			map.remove(j--);
-		}
-		j++;
-		return new int[]{i, j};
+		return new int[]{start, end};
 	}
 }
