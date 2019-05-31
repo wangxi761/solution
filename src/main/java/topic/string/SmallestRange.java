@@ -6,13 +6,13 @@ import java.util.PriorityQueue;
 public class SmallestRange {
 	public class Element {
 		int val;
-		int bucket;
-		int id;
+		int row;
+		int column;
 		
-		public Element(int val, int bucket, int id) {
+		public Element(int val, int row, int column) {
 			this.val = val;
-			this.bucket = bucket;
-			this.id = id;
+			this.row = row;
+			this.column = column;
 		}
 	}
 	
@@ -33,9 +33,9 @@ public class SmallestRange {
 				start = cur.val;
 				end = max;
 			}
-			if (cur.id + 1 < nums.get(cur.bucket).size()) {
-				cur.id++;
-				cur.val = nums.get(cur.bucket).get(cur.id);
+			if (cur.column + 1 < nums.get(cur.row).size()) {
+				cur.column++;
+				cur.val = nums.get(cur.row).get(cur.column);
 				queue.offer(cur);
 				if (cur.val > max) {
 					max = cur.val;
