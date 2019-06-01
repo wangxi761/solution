@@ -1,15 +1,12 @@
 package solution._11_20;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-
-import solution.common.ListNode;
+import struct.ListNode;
 
 public class RemoveNthNodeFromEndofList {
 	@Test
 	public void test() throws Exception {
-		ListNode node = ListNode.create(1,2,3);
+		ListNode node = ListNode.create(1, 2, 3);
 		ListNode nthFromEnd = removeNthFromEnd(node, 1);
 		System.out.println(nthFromEnd.getList());
 	}

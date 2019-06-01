@@ -1,6 +1,6 @@
 package solution._21_30;
 
-import solution.common.ListNode;
+import struct.ListNode;
 
 public class SwapNodesinPairs {
 
