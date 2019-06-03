@@ -1,15 +1,12 @@
 package solution._21_30;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-
-import solution.common.ListNode;
+import struct.ListNode;
 
 public class MergeTwoSortedLists {
 	@Test
 	public void test() throws Exception {
-		ListNode l1=ListNode.create(1,2,4);
+		ListNode l1 = ListNode.create(1, 2, 4);
 		ListNode l2=ListNode.create(1,3,4);
 		System.out.println(mergeTwoLists(l1, l2).getList());
 		

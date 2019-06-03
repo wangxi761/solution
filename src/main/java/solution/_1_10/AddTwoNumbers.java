@@ -1,6 +1,6 @@
 package solution._1_10;
 
-import solution.common.ListNode;
+import struct.ListNode;
 
 public class AddTwoNumbers {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

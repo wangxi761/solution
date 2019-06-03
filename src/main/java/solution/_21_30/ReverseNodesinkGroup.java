@@ -1,10 +1,8 @@
 package solution._21_30;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import struct.ListNode;
 
-import solution.common.ListNode;
+import java.util.Stack;
 
 public class ReverseNodesinkGroup {
 

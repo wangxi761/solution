@@ -1,14 +1,9 @@
 package solution._21_30;
 
-import static org.junit.Assert.*;
-
-import java.util.Arrays;
 import java.util.PriorityQueue;
 
 import org.junit.Test;
-import org.junit.rules.Stopwatch;
-
-import solution.common.ListNode;
+import struct.ListNode;
 
 @SuppressWarnings("unused")
 public class MergekSortedLists {

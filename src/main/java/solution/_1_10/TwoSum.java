@@ -1,11 +1,9 @@
 package solution._1_10;
 
+import struct.ListNode;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.junit.Test;
-
-import solution.common.ListNode;
 
 public class TwoSum {
 	public void test() {
