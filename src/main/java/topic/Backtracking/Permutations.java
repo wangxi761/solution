@@ -2,7 +2,6 @@ package topic.Backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class Permutations {
 	public List<List<Integer>> permute(int[] nums) {
