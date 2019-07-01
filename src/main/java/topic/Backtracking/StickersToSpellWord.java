@@ -22,23 +22,16 @@ public class StickersToSpellWord {
 		if (!tag) return num;
 		int min = -1;
 		for (int i = 0; i < stickers.length; i++) {
-			add(target, stickers[i]);
+			for (int j = 0; j < stickers[i].length(); j++) {
+				target[stickers[i].charAt(j) - 'a']++;
+			}
 			int next = recursive(stickers, target, num + 1);
 			min = min < 0 ? next : Math.min(min, next);
-			sub(target, stickers[i]);
+			for (int j = 0; j < stickers[i].length(); j++) {
+				target[stickers[i].charAt(j) - 'a']--;
+			}
 		}
 		return min;
 	}
 	
-	private void add(int[] target, String str) {
-		for (int i = 0; i < str.length(); i++) {
-			target[str.charAt(i) - 'a']++;
-		}
-	}
-	
-	private void sub(int[] target, String str) {
-		for (int i = 0; i < str.length(); i++) {
-			target[str.charAt(i) - 'a']--;
-		}
-	}
 }
