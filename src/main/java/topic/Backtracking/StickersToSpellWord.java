@@ -31,10 +31,10 @@ public class StickersToSpellWord {
 			changed = false;
 			zero = true;
 			for (int j = 0; j < stickers[i].length; j++) {
-				if (target[j] <= 0) continue;
-				target[j] -= stickers[i][j];
+				int next = target[j] - stickers[i][j];
+				if (target[j] > 0 && next != target[j]) changed = true;
+				target[j] = next;
 				if (target[j] > 0) zero = false;
-				changed = true;
 			}
 			
 			int next = dfs(stickers, target, num + 1, zero, changed);

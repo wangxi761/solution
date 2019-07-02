@@ -10,5 +10,6 @@ public class StickersToSpellWordTest {
 	@Test
 	public void minStickers() {
 		assertEquals(3, test.minStickers(new String[]{"with", "example", "science"}, "thehat"));
+		assertEquals(-1, test.minStickers(new String[]{"notice", "possible"}, "basicbasic"));
 	}
 }
