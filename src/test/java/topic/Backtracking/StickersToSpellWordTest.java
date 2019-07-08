@@ -12,4 +12,10 @@ public class StickersToSpellWordTest {
 		assertEquals(3, test.minStickers(new String[]{"with", "example", "science"}, "thehat"));
 		assertEquals(-1, test.minStickers(new String[]{"notice", "possible"}, "basicbasic"));
 	}
+	
+	@Test
+	public void bitOperate() {
+		assertEquals(0, 4 & 3);
+		assertEquals(8, 1 << "aaa".length());
+	}
 }

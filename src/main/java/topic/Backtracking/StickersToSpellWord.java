@@ -1,7 +1,38 @@
 package topic.Backtracking;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class StickersToSpellWord {
 	public int minStickers(String[] stickers, String target) {
+		int length = target.length(), size = 1 << length;
+		int[] dp = new int[size];
+		for (int i = 0; i < dp.length; i++) {
+			if (i > 0) {
+				dp[i] = Integer.MAX_VALUE;
+			}
+		}
+		for (int i = 0; i < dp.length; i++) {
+			if (dp[i] == Integer.MAX_VALUE) continue;
+			for (String sticker : stickers) {
+				int cur = i;
+				for (char c : sticker.toCharArray()) {
+					for (int j = 0; j < length; j++) {
+						if (target.charAt(j) == c && ((cur >> j) & 1) == 0) {
+							cur |= 1 << j;
+							break;
+						}
+					}
+				}
+				dp[cur] = Math.min(dp[cur], dp[i] + 1);
+			}
+		}
+		return dp[size - 1] == Integer.MAX_VALUE ? -1 : dp[size - 1];
+	}
+	
+	
+	public int minStickers1(String[] stickers, String target) {
 		if (target.isEmpty()) return 0;
 		int[] ch = new int[26];
 		for (int i = 0; i < target.length(); i++) {
@@ -47,6 +78,38 @@ public class StickersToSpellWord {
 		return res;
 	}
 	
+	private Map<Character, Integer> convert(String str, String target) {
+		Map<Character, Integer> map = new HashMap<>();
+		for (char c : str.toCharArray()) {
+			if (target.indexOf(c) < 0) continue;
+			map.put(c, map.getOrDefault(c, 0) + 1);
+		}
+		return map;
+	}
+	
+	private int dfs(List<Map<Character, Integer>> stickers, Map<Character, Integer> target, int res, boolean changed) {
+		if (target.values().stream().allMatch(i -> i == 0)) {
+			return res;
+		} else if (!changed) {
+			return -1;
+		}
+		int min = -1;
+		for (int i = 0; i < stickers.size(); i++) {
+			changed = false;
+			for (Map.Entry<Character, Integer> entry : stickers.get(i).entrySet()) {
+				Integer num = target.get(entry.getKey());
+				int next = num - entry.getValue();
+				if (num > 0 && next != num) changed = true;
+				target.put(entry.getKey(), num);
+			}
+			int next = dfs(stickers, target, res + 1, changed);
+			min = min < 0 || next < 0 ? Math.max(min, next) : Math.min(min, next);
+			for (Map.Entry<Character, Integer> entry : stickers.get(i).entrySet()) {
+				target.put(entry.getKey(), target.get(entry.getKey()) + entry.getValue());
+			}
+		}
+		return min;
+	}
 	
 	private int recursive1(String[] stickers, int[] target, int num) {
 		boolean tag = false;
