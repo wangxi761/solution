@@ -1,4 +1,4 @@
-package topic.Backtracking;
+package topic.backtracking;
 
 public class CountNumberswithUniqueDigits {
 	public int countNumbersWithUniqueDigits(int n) {

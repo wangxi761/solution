@@ -1,4 +1,4 @@
-package topic.Backtracking;
+package topic.backtracking;
 
 public class BeautifulArrangement {
 	public int countArrangement(int N) {

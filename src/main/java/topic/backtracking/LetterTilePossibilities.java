@@ -1,4 +1,4 @@
-package topic.Backtracking;
+package topic.backtracking;
 
 public class LetterTilePossibilities {
 	public int numTilePossibilities(String tiles) {

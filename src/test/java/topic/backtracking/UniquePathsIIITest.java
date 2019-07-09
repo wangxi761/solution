@@ -1,8 +1,8 @@
-package topic.Backtracking;
+package topic.backtracking;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class UniquePathsIIITest {
 	UniquePathsIII test = new UniquePathsIII();

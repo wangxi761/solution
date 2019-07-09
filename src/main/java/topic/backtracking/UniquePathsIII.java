@@ -1,4 +1,4 @@
-package topic.Backtracking;
+package topic.backtracking;
 
 public class UniquePathsIII {
 	public int uniquePathsIII(int[][] grid) {
