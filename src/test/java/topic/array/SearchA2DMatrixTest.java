@@ -2,8 +2,6 @@ package topic.array;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class SearchA2DMatrixTest {
 
     @Test
@@ -25,7 +23,7 @@ public class SearchA2DMatrixTest {
 //        assertFalse(searchA2DMatrix.searchMatrix(matrix1,13));
 //        searchA2DMatrix.searchMatrix(new int[][]{{1}},0);
         searchA2DMatrix.searchMatrix(new int[][]{{1, 3}}, 2);
-//        assertFalse(binarySearch(new int[]{1,3},2));
+//        assertFalse(lower_bound(new int[]{1,3},2));
     }
 
 
