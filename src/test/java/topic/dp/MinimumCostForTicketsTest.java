@@ -9,13 +9,10 @@ public class MinimumCostForTicketsTest {
 	
 	@Test
 	public void minCostTickets() {
+		int[] days = {1, 4, 6, 7, 8, 20};
+		int[] costs = {2, 7, 15};
+		assertEquals(11, test.minCostTickets(days, costs));
 	}
 	
-	@Test
-	public void binarySearch() {
-		int[] days = {1, 4, 6, 7, 8, 20};
-		int res = test.lower_bound(days, 13, 0, days.length);
-		assertEquals(4, res - 1);
-//		assertEquals(0, Arrays.binarySearch(days,13));
-	}
+	
 }
