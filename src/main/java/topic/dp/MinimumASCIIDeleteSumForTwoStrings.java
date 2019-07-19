@@ -4,14 +4,12 @@ public class MinimumASCIIDeleteSumForTwoStrings {
 	public int minimumDeleteSum(String s1, String s2) {
 		int[] dp = new int[s2.length() + 1];
 		for (int i = 0; i < s1.length(); i++) {
-			int last = dp[0];
 			for (int j = 1; j < dp.length; j++) {
 				if (s1.charAt(i) == s2.charAt(j - 1)) {
-					dp[j] = last + s1.charAt(i);
+					dp[j] = dp[j - 1] + s1.charAt(i);
 				} else {
 					dp[j] = Math.max(dp[j], dp[j - 1]);
 				}
-				last = dp[j];
 			}
 		}
 		int sum = 0;
