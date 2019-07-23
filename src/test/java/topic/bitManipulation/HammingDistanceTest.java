@@ -15,7 +15,7 @@ public class HammingDistanceTest {
 	
 	@Test
 	public void test() {
-		System.out.println(Integer.bitCount(6));
+		System.out.println(2 >>> 1);
 	}
 	
 }
