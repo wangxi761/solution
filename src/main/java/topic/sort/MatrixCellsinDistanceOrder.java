@@ -7,10 +7,20 @@ public class MatrixCellsinDistanceOrder {
 		for (int i = 0; i <= R + C - 2; i++) {
 			for (int x = 0; x <= i; x++) {
 				int y = i - x;
-				count = getCount(R, C, res, count, r0 + x, c0 + y);
-				count = getCount(R, C, res, count, r0 - x, c0 + y);
-				count = getCount(R, C, res, count, r0 + x, c0 - y);
-				count = getCount(R, C, res, count, r0 - x, c0 - y);
+				if (x == 0 && y == 0) {
+					count = getCount(R, C, res, count, r0, c0);
+				} else if (x == 0 && y != 0) {
+					count = getCount(R, C, res, count, r0, c0 + y);
+					count = getCount(R, C, res, count, r0, c0 - y);
+				} else if (x != 0 && y == 0) {
+					count = getCount(R, C, res, count, r0 + x, c0);
+					count = getCount(R, C, res, count, r0 - x, c0);
+				} else {
+					count = getCount(R, C, res, count, r0 + x, c0 + y);
+					count = getCount(R, C, res, count, r0 - x, c0 + y);
+					count = getCount(R, C, res, count, r0 + x, c0 - y);
+					count = getCount(R, C, res, count, r0 - x, c0 - y);
+				}
 			}
 		}
 		return res;
