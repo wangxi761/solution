@@ -35,4 +35,21 @@ public class KClosestPointstoOrigin {
 	public double length(int[] i) {
 		return Math.sqrt(Math.pow(i[0], 2) + Math.pow(i[1], 2));
 	}
+	
+	public int help(int[] arr, int begin, int end) {
+		int lo = begin, hi = end;
+		int pivot = arr[lo];
+		while (lo < hi) {
+			while (lo < hi && pivot <= arr[hi]) {
+				hi--;
+			}
+			arr[lo] = arr[hi];
+			while (lo < hi && pivot >= arr[lo]) {
+				lo++;
+			}
+			arr[hi] = arr[lo];
+		}
+		arr[lo] = pivot;
+		return lo;
+	}
 }

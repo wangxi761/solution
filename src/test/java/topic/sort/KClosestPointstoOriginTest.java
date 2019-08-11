@@ -1,18 +1,18 @@
 package topic.sort;
 
 import org.junit.Test;
+import util.ArrayUtil;
 
 import java.util.PriorityQueue;
+import java.util.Random;
+import java.util.stream.IntStream;
 
 public class KClosestPointstoOriginTest {
 	KClosestPointstoOrigin test = new KClosestPointstoOrigin();
 	
 	@Test
 	public void kClosest() {
-		PriorityQueue<Integer> queue = new PriorityQueue<>();
-		queue.offer(1);
-		queue.offer(2);
-		queue.offer(3);
-		System.out.println(queue.peek());
+		int[] arr = {3, 5, 2, 4, 1};
+		test.help(arr, 0, arr.length - 1);
 	}
 }
