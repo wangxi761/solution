@@ -1,6 +1,5 @@
 package topic.sort;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class LongestWordInDictionaryThroughDeleting {
@@ -26,6 +25,6 @@ public class LongestWordInDictionaryThroughDeleting {
 				}
 			}
 		}
-		
+		return null;
 	}
 }
