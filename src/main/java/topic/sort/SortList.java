@@ -11,13 +11,14 @@ public class SortList {
 		while (head != null) {
 			if (head.next == null) {
 				queue.offer(head);
+				head = head.next;
 			} else {
 				ListNode next = head.next.next;
 				if (head.val > head.next.val) {
 					head.next.next = head;
 					head = head.next;
-					head.next.next = null;
 				}
+				head.next.next = null;
 				queue.offer(head);
 				head = next;
 			}
@@ -44,15 +45,11 @@ public class SortList {
 				l2 = l2.next;
 			}
 		}
-		while (l1 != null) {
+		if (l1 != null) {
 			head.next = l1;
-			head = head.next;
-			l1 = l1.next;
 		}
-		while (l2 != null) {
+		if (l2 != null) {
 			head.next = l2;
-			head = head.next;
-			l2 = l2.next;
 		}
 		return res.next;
 	}
