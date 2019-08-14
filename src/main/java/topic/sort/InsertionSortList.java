@@ -16,16 +16,13 @@ public class InsertionSortList {
 	
 	public ListNode insert(ListNode head, ListNode node) {
 		if (head == null) return node;
-		if (node.val < head.val) {
-			node.next = head;
-			return node;
-		}
-		ListNode first = head;
+		ListNode pre = new ListNode(Integer.MIN_VALUE);
+		pre.next = head;
+		ListNode first = pre;
 		while (head != null) {
 			if (node.val < head.val) {
-				ListNode next = head.next;
-				head.next = node;
-				node.next = next;
+				pre.next = node;
+				node.next = head;
 				break;
 			}
 			if (head.next == null) {
@@ -33,7 +30,8 @@ public class InsertionSortList {
 				break;
 			}
 			head = head.next;
+			pre = pre.next;
 		}
-		return first;
+		return first.next;
 	}
 }
