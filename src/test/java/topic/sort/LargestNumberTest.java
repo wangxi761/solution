@@ -1,5 +1,6 @@
 package topic.sort;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class LargestNumberTest {
@@ -7,6 +8,7 @@ public class LargestNumberTest {
 	
 	@Test
 	public void largestNumber() {
-		System.out.println(test.largestNumber(new int[]{35, 5, 1, 2, 4}));
+		Assert.assertEquals("9534330", test.largestNumber(new int[]{3, 30, 34, 5, 9}));
+		Assert.assertEquals("210", test.largestNumber(new int[]{10, 2}));
 	}
 }

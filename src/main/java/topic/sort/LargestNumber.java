@@ -15,20 +15,14 @@ public class LargestNumber {
 		for (int num : nums) {
 			sb.append(num);
 		}
+		if (sb.charAt(0) == '0') {
+			return "0";
+		}
 		return sb.toString();
 	}
 	
 	public boolean big(int a, int b) {
-		boolean tag = a > b;
-		while (count(a) != count(b)) {
-			if (a > b) {
-				b *= 10;
-			} else {
-				a *= 10;
-			}
-		}
-		if (a == b) return tag;
-		return a > b;
+		return a * Math.pow(10, count(b)) + b > b * Math.pow(10, count(a)) + a;
 	}
 	
 	public void swap(int[] nums, int i, int j) {
