@@ -85,10 +85,10 @@ public class CountofSmallerNumbersAfterSelf {
 		int l = begin, r = end;
 		while (l < r) {
 			int mid = (r - l) / 2 + l;
-			if (mid >= target) {
-				l = mid + 1;
-			} else {
+			if (nums[mid] > target) {
 				r = mid;
+			} else {
+				l = mid + 1;
 			}
 		}
 		return l;
