@@ -21,4 +21,10 @@ public class ArrayUtil {
 		System.out.println(Arrays.toString(ts));
 		System.out.println("");
 	}
+	
+	public static <T> void prettyPrint(T[] ts) {
+		System.out.println("");
+		System.out.println(Arrays.toString(ts));
+		System.out.println("");
+	}
 }
