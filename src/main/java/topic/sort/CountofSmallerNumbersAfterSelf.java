@@ -64,7 +64,7 @@ public class CountofSmallerNumbersAfterSelf {
 		return res;
 	}
 	
-	public List<Integer> countSmaller(int[] nums) {
+	public List<Integer> countSmaller4(int[] nums) {
 		List<Integer> res = new ArrayList<>();
 		for (int i = nums.length - 1; i >= 0; i--) {
 			int data = nums[i];
@@ -81,17 +81,35 @@ public class CountofSmallerNumbersAfterSelf {
 		return res;
 	}
 	
+	public List<Integer> countSmaller(int[] nums) {
+		List<Integer> res = new ArrayList<>();
+		for (int i = nums.length - 1; i >= 0; i--) {
+			int index = lower_bound(nums, i + 1, nums.length, nums[i]);
+			int num = 0;
+			if (index < nums.length) {
+				int data = nums[i];
+				for (int j = i + 1; j <= index; j++) {
+					nums[j - 1] = nums[j];
+					num++;
+				}
+				nums[index] = data;
+			}
+			res.add(0, num);
+		}
+		return res;
+	}
+	
 	public int lower_bound(int[] nums, int begin, int end, int target) {
 		int l = begin, r = end;
 		while (l < r) {
 			int mid = (r - l) / 2 + l;
-			if (nums[mid] > target) {
+			if (nums[mid] >= target) {
 				r = mid;
 			} else {
 				l = mid + 1;
 			}
 		}
-		return l;
+		return l - 1;
 	}
 	
 	
