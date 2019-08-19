@@ -1,4 +1,4 @@
-package topic.sort;
+package topic.hashtable;
 
 public class NRepeatedElementinSize2NArray {
 	public int repeatedNTimes(int[] A) {
