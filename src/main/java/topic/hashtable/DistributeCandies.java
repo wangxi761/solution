@@ -9,7 +9,7 @@ public class DistributeCandies {
 		for (int candy : candies) {
 			map.put(candy, map.getOrDefault(map, 0) + 1);
 		}
-		return map.size() > candies.length / 2 ? candies.length / 2 : map.size();
+		return Math.min(map.size(), candies.length / 2);
 	}
 	
 	public int distributeCandies(int[] candies) {
@@ -23,6 +23,6 @@ public class DistributeCandies {
 				size++;
 			}
 		}
-		return size > candies.length / 2 ? candies.length / 2 : size;
+		return Math.min(size, candies.length / 2);
 	}
 }
