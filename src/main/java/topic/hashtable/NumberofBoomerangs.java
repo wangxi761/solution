@@ -1,13 +1,34 @@
 package topic.hashtable;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
 public class NumberofBoomerangs {
 	public int numberOfBoomerangs(int[][] points) {
+		int res = 0;
+		for (int i = 0; i < points.length; i++) {
+			Map<Integer, Integer> map = new HashMap<>();
+			for (int j = 0; j < points.length; j++) {
+				int len = (points[i][0] - points[j][0]) * (points[i][0] - points[j][0]) + (points[i][1] - points[j][1]) * (points[i][1] - points[j][1]);
+				map.put(len, map.getOrDefault(len, 0) + 1);
+			}
+			for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+				if (entry.getValue() > 1) {
+					res += entry.getValue() * (entry.getValue() - 1);
+				}
+			}
+		}
+		return res;
+	}
+	
+	public int numberOfBoomerangs1(int[][] points) {
+		Arrays.sort(points, Comparator.comparing(i -> i[0] * i[0] + i[1] * i[1]));
 		Map<String, Integer> cache = new HashMap<>();
 		int[][] candidate = new int[3][2];
-		return recursive(points, candidate, 3, 0, cache);
+		int recursive = recursive(points, candidate, 3, 0, cache);
+		return recursive;
 	}
 	
 	public int recursive(int[][] points, int[][] candidate, int size, int index, Map<String, Integer> cache) {
