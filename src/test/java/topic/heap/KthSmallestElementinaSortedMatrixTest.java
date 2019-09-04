@@ -24,11 +24,12 @@ public class KthSmallestElementinaSortedMatrixTest {
 	@Test
 	public void count() {
 		int n = 8;
-		int[][] arr = new int[2 * n - 1][2];
+		int[][] arr = new int[2 * n - 1][3];
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++) {
-			arr[i][0] = i + 1 > n ? 2 * n - i - 1 : i + 1;
-			arr[i][1] = sum += i;
+			arr[i][0] = i + 1;
+			arr[i][1] = i + 1 > n ? 2 * n - i - 1 : i + 1;
+			arr[i][2] = sum += i;
 		}
 		ArrayUtil.prettyPrint(arr);
 	}
