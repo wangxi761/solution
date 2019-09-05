@@ -7,6 +7,11 @@ public class KthSmallestElementinaSortedMatrixTest {
 	KthSmallestElementinaSortedMatrix test = new KthSmallestElementinaSortedMatrix();
 	
 	@Test
+	public void kthSmallestTest() {
+		int[][] matrix = {{1, 5, 9}, {10, 11, 13}, {12, 13, 15}};
+		System.out.println(test.kthSmallest(matrix, 8));
+	}
+	@Test
 	public void diagonal() {
 		int n = 5;
 		int[][] m = new int[n][n];
