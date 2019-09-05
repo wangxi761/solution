@@ -10,7 +10,7 @@ public class TopKFrequentWords {
 			.collect(Collectors.groupingBy(Function.identity(), () -> new LinkedHashMap<>(), Collectors.counting()))
 			.entrySet()
 			.stream()
-			.sorted(Comparator.<Map.Entry<String, Long>, Long>comparing(stringLongEntry -> stringLongEntry.getValue()).reversed())
+			.sorted(Comparator.<Map.Entry<String, Long>, Long>comparing(entry -> entry.getValue()).reversed().thenComparing(Map.Entry::getKey))
 			.limit(k).map(Map.Entry::getKey).collect(Collectors.toList());
 	}
 	
