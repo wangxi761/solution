@@ -8,8 +8,8 @@ public class KthSmallestElementinaSortedMatrixTest {
 	
 	@Test
 	public void kthSmallestTest() {
-		int[][] matrix = {{1, 5, 9}, {10, 11, 13}, {12, 13, 15}};
-		System.out.println(test.kthSmallest(matrix, 8));
+		System.out.println(test.kthSmallest(new int[][]{{1, 2}, {1, 3}}, 3));
+		System.out.println(test.kthSmallest(new int[][]{{1, 5, 9}, {10, 11, 13}, {12, 13, 15}}, 8));
 	}
 	@Test
 	public void diagonal() {

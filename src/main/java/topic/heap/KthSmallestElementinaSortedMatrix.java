@@ -1,27 +1,21 @@
 package topic.heap;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class KthSmallestElementinaSortedMatrix {
 	public int kthSmallest(int[][] matrix, int k) {
-		int max = Integer.MIN_VALUE;
-		int count = 0, sum = 0;
-		TAG:
-		while (sum < 2 * matrix.length - 1) {
-			int initCount = count;
-			for (int i = 0; i <= sum; i++) {
-				int j = sum - i;
-				if (i > matrix.length - 1 || j > matrix.length - 1) {
-					continue;
-				}
-				count++;
-				if (count == k) {
-					count = initCount;
-					break TAG;
+		PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix.length; j++) {
+				if (queue.size() < k) {
+					queue.offer(matrix[i][j]);
+				} else if (queue.peek() > matrix[i][j]) {
+					queue.poll();
+					queue.offer(matrix[i][j]);
 				}
 			}
 		}
-		for (int i = 0; i <= sum; i++) {
-			int j = sum - i;
-		}
-		return max;
+		return queue.poll();
 	}
 }
