@@ -2,7 +2,6 @@ package topic.heap;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class NetworkDelayTime {
 	
@@ -15,8 +14,7 @@ public class NetworkDelayTime {
 		}
 	}
 	
-	public void recursive(Map<Integer, Map<Integer, Integer>> cache, int k, Set<Integer> pass) {
-		pass.add(k);
+	public void recursive(Map<Integer, Map<Integer, Integer>> cache, int k, int len) {
 		if (!cache.containsKey(k)) {
 			return;
 		}
