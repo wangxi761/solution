@@ -5,19 +5,21 @@ import java.util.*;
 public class FindKPairswithSmallestSums {
 	public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
 		List<List<Integer>> res = new ArrayList<>();
-		for (int i = 0, j = 0; i < nums1.length && j < nums2.length; ) {
-			res.add(Arrays.asList(nums1[i], nums2[j]));
-			if (i + 1 == nums1.length && j + 1 == nums2.length) {
-				break;
-			} else if (i + 1 == nums1.length) {
-				j++;
-			} else if (j + 1 == nums2.length) {
-				i++;
-			} else if (nums1[i + 1] + nums2[j] > nums1[i] + nums2[j + 1]) {
-				j++;
-			} else {
-				i++;
+		if (nums1.length == 0 || nums2.length == 0 || k <= 0) return res;
+		PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				return nums1[o1[0]] + nums2[o1[1]] - nums1[o2[0]] - nums2[o2[1]];
 			}
+		});
+		for (int j = 0; j < nums2.length; j++) {
+			pq.offer(new int[]{0, j});
+		}
+		for (int i = 0; i < Math.min(k, nums1.length * nums2.length); i++) {
+			int[] cur = pq.poll();
+			res.add(Arrays.asList(nums1[cur[0]], nums2[cur[1]]));
+			if (cur[0] == nums1.length - 1) continue;
+			pq.offer(new int[]{cur[0] + 1, cur[1]});
 		}
 		return res;
 	}
