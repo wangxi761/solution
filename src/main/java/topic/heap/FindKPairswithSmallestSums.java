@@ -1,16 +1,25 @@
 package topic.heap;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class FindKPairswithSmallestSums {
 	public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-		int i = 0, j = 0;
-		while (i < nums1.length || j < nums2.length) {
-		
+		List<List<Integer>> res = new ArrayList<>();
+		for (int i = 0, j = 0; i < nums1.length && j < nums2.length; ) {
+			res.add(Arrays.asList(nums1[i], nums2[j]));
+			if (i + 1 == nums1.length && j + 1 == nums2.length) {
+				break;
+			} else if (i + 1 == nums1.length) {
+				j++;
+			} else if (j + 1 == nums2.length) {
+				i++;
+			} else if (nums1[i + 1] + nums2[j] > nums1[i] + nums2[j + 1]) {
+				j++;
+			} else {
+				i++;
+			}
 		}
+		return res;
 	}
 	
 	public List<List<Integer>> kSmallestPairs1(int[] nums1, int[] nums2, int k) {
