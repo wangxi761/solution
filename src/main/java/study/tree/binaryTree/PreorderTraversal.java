@@ -1,13 +1,13 @@
 package study.tree.binaryTree;
 
+import struct.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import struct.TreeNode;
-
 public class PreorderTraversal {
 	public List<Integer> preorderTraversal(TreeNode root) {
-		List<Integer> list=new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<>();
 		recursive(list, root);
 		return list;
 	}
