@@ -2,25 +2,52 @@ package study.impl;
 
 import org.junit.Test;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
 
-public class Priority_Queue {
-	@Test
-	public void test() throws NoSuchFieldException, IllegalAccessException {
-		List list = new ArrayList();
-		Field field = ArrayList.class.getDeclaredField("elementData");
-		field.trySetAccessible();
-		int last = 0;
-		for (int i = 0; i < 100; i++) {
-			list.add(i);
-			Object[] elementData = (Object[]) field.get(list);
-			if (elementData.length != last) {
-				System.out.println(String.format("%d\t%d\t%d", elementData.length, i, i + (i >> 1)));
-				last = elementData.length;
-			}
-		}
+public class Priority_Queue<T> {
+	Object[] elementData;
+	int size;
+	Comparator<T> comparator;
+	
+	public Priority_Queue() {
+		this.size = 11;
+		comparator = null;
 	}
 	
+	public boolean offer(T o) {
+		if (o == null) throw new NullPointerException();
+		if (size >= elementData.length) {
+			elementData = Arrays.copyOf(elementData, size + size + 2);
+		}
+		
+		int index = size;
+		Comparable<T> key = (Comparable<T>) o;
+		while (index > 0) {
+			int parent = (size - 1) >>> 1;
+			Object p = elementData[parent];
+			if (key.compareTo((T) p) >= 0) {
+				break;
+			}
+			elementData[index] = p;
+			index = parent;
+		}
+		elementData[index] = key;
+		size++;
+		return true;
+	}
+	
+	public T poll() {
+		return null;
+	}
+	
+	public T peek() {
+		return ((T) elementData[0]);
+	}
+	
+	
+	@Test
+	public void test() {
+	
+	}
 }
