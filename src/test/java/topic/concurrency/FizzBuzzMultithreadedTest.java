@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class FizzBuzzMultithreadedTest {
 	FizzBuzzMultithreaded test = new FizzBuzzMultithreaded(15);
-	int i = 1, n = 15;
+	int i = 1, n = 10;
 	Lock lock = new ReentrantLock();
 	Condition a = lock.newCondition();
 	Condition b = lock.newCondition();
@@ -21,76 +21,128 @@ public class FizzBuzzMultithreadedTest {
 	public void test() throws InterruptedException {
 		
 		new Thread(() -> {
-			while (i <= n) {
+			try {
 				lock.lock();
-				if (getState() == 0) {
-					System.out.println("0");
-					i++;
-					b.signalAll();
-				} else {
-					try {
+				while (i <= n) {
+					if (getState() == 0) {
+						System.out.println("0");
+						i++;
+					} else if (getState() == 1) {
+						b.signal();
 						a.await();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
+					} else if (getState() == 2) {
+						c.signal();
+						a.await();
+					} else {
+						d.signal();
+						a.await();
+					}
+					if (i > n) {
+//						b.signal();
+//						c.signal();
+//						d.signal();
+						a.signalAll();
 					}
 				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} finally {
 				lock.unlock();
+				latch.countDown();
 			}
-			latch.countDown();
 		}).start();
 		new Thread(() -> {
-			while (i <= n) {
+			try {
 				lock.lock();
-				if (getState() == 1) {
-					System.out.println("1");
-					i++;
-					c.signalAll();
-				} else {
-					try {
+				while (i <= n) {
+					if (getState() == 0) {
+						a.signal();
 						b.await();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
+					} else if (getState() == 1) {
+						System.out.println("1");
+						i++;
+					} else if (getState() == 2) {
+						c.signal();
+						b.await();
+					} else {
+						d.signal();
+						b.await();
+					}
+					if (i > n) {
+//						a.signal();
+//						c.signal();
+//						d.signal();
+						b.signalAll();
 					}
 				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} finally {
 				lock.unlock();
+				latch.countDown();
 			}
-			latch.countDown();
 		}).start();
 		new Thread(() -> {
-			while (i <= n) {
+			try {
 				lock.lock();
-				if (getState() == 2) {
-					System.out.println("2");
-					i++;
-					d.signalAll();
-				} else {
-					try {
+				while (i <= n) {
+					if (getState() == 0) {
+						a.signal();
 						c.await();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
+					} else if (getState() == 1) {
+						b.signal();
+						c.await();
+					} else if (getState() == 2) {
+						System.out.println("2");
+						i++;
+					} else {
+						d.signal();
+						c.await();
+					}
+					if (i > n) {
+//						b.signal();
+//						a.signal();
+//						d.signal();
+						c.signalAll();
 					}
 				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} finally {
+				latch.countDown();
 				lock.unlock();
 			}
-			latch.countDown();
 		}).start();
 		new Thread(() -> {
-			while (i <= n) {
+			try {
 				lock.lock();
-				if (getState() == 3) {
-					System.out.println("3");
-					i++;
-					a.signalAll();
-				} else {
-					try {
+				while (i <= n) {
+					if (getState() == 0) {
+						a.signal();
 						d.await();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
+					} else if (getState() == 1) {
+						b.signal();
+						d.await();
+					} else if (getState() == 2) {
+						c.signal();
+						d.await();
+					} else {
+						System.out.println("3");
+						i++;
+					}
+					if (i > n) {
+//						a.signal();
+//						b.signal();
+//						c.signal();
+						d.signalAll();
 					}
 				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} finally {
+				latch.countDown();
 				lock.unlock();
 			}
-			latch.countDown();
 		}).start();
 		latch.await();
 	}
