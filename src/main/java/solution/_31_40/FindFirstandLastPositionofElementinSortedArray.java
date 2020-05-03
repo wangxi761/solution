@@ -1,10 +1,10 @@
 package solution._31_40;
 
-import static org.junit.Assert.*;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import org.junit.Test;
 
 public class FindFirstandLastPositionofElementinSortedArray {
 

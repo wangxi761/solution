@@ -1,15 +1,17 @@
 package solution._11_20;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
-import org.junit.Assert;
-import org.junit.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class RomantoInteger {
 
 	@Test
 	public void test() throws Exception {
-		Assert.assertArrayEquals(new int[] { 3, 4, 9, 58, 1994 }, new int[] { romanToInt("III"), romanToInt("IV"),
+		assertArrayEquals(new int[] { 3, 4, 9, 58, 1994 }, new int[] { romanToInt("III"), romanToInt("IV"),
 				romanToInt("IX"), romanToInt("LVIII"), romanToInt("MCMXCIV") });
 	}
 

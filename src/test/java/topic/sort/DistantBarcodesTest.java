@@ -1,9 +1,9 @@
 package topic.sort;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import util.ArrayUtil;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DistantBarcodesTest {
 	DistantBarcodes test = new DistantBarcodes();

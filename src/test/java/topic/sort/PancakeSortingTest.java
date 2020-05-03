@@ -1,6 +1,6 @@
 package topic.sort;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PancakeSortingTest {
 	PancakeSorting test = new PancakeSorting();

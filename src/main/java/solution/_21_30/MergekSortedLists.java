@@ -1,9 +1,9 @@
 package solution._21_30;
 
-import java.util.PriorityQueue;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import struct.ListNode;
+
+import java.util.PriorityQueue;
 
 @SuppressWarnings("unused")
 public class MergekSortedLists {

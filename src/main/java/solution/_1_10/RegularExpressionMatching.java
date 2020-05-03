@@ -1,7 +1,9 @@
 package solution._1_10;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 /**
  * 模拟正则表达式 "."和"*"的效果
  * @author ccf
@@ -12,7 +14,7 @@ public class RegularExpressionMatching {
 	@Test
 	public void test() throws Exception {
 		boolean tag=isMatch("aabbcc", "a*b*.*");
-		Assert.assertTrue(tag);
+		assertTrue(tag);
 				
 	}
 	

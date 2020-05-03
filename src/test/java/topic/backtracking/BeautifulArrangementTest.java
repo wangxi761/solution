@@ -1,11 +1,11 @@
-package topic.backtracking;
+package topic.Backtracking;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BeautifulArrangementTest {
-	BeautifulArrangement test = new BeautifulArrangement();
+	topic.backtracking.BeautifulArrangement test = new topic.backtracking.BeautifulArrangement();
 	
 	@Test
 	public void countArrangement() {

@@ -1,6 +1,6 @@
 package topic.hashtable;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import util.ArrayUtil;
 
 public class OccurrencesAfterBigramTest {

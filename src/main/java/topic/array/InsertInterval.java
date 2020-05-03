@@ -1,9 +1,12 @@
 package topic.array;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import struct.Interval;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class InsertInterval {
     public List<Interval> insert(List<Interval> intervals, Interval newInterval) {

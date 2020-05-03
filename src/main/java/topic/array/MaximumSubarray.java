@@ -1,9 +1,11 @@
 package topic.array;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
@@ -30,6 +32,6 @@ public class MaximumSubarray {
     public void maxSubArrayTest() {
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int maxSubArray = maxSubArray2(nums);
-        Assert.assertEquals(6, maxSubArray);
+        assertEquals(6, maxSubArray);
     }
 }

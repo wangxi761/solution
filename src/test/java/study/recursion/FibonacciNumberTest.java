@@ -1,8 +1,8 @@
 package study.recursion;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FibonacciNumberTest {
 	FibonacciNumber test = new FibonacciNumber();

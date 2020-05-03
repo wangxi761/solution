@@ -1,10 +1,12 @@
 package solution._21_30;
 
-import static org.junit.Assert.*;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class RemoveElement {
 	public int removeElement(int[] nums, int val) {

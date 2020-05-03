@@ -1,11 +1,11 @@
-package topic.backtracking;
+package topic.Backtracking;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumberOfSquarefulArraysTest {
-	NumberOfSquarefulArrays test = new NumberOfSquarefulArrays();
+	topic.backtracking.NumberOfSquarefulArrays test = new topic.backtracking.NumberOfSquarefulArrays();
 	
 	@Test
 	public void numSquarefulPerms() {

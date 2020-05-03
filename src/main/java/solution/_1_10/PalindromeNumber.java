@@ -1,8 +1,7 @@
 package solution._1_10;
 
-import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PalindromeNumber {
 	public boolean isPalindrome(int x) {

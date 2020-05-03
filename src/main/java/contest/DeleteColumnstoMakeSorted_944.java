@@ -1,8 +1,8 @@
 package contest;
 
-import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class DeleteColumnstoMakeSorted_944 {
 	public int minDeletionSize(String[] A) {
@@ -27,6 +27,6 @@ public class DeleteColumnstoMakeSorted_944 {
 	public void test() throws Exception {
 		String[] A= {"cba","daf","ghi"};
 		int minDeletionSize = minDeletionSize(A);
-		assertEquals(1, minDeletionSize);
+		Assertions.assertEquals(1, minDeletionSize);
 	}
 }

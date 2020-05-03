@@ -1,10 +1,10 @@
 package study.RecursionII;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SortAnArrayTest {
 	SortAnArray test = new SortAnArray();

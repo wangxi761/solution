@@ -2,7 +2,7 @@ package study.tree.binaryTree;
 
 import java.util.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import struct.Node;
 
 public class PopulatingNextRightPointersinEachNodeTest {

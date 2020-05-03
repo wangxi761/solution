@@ -1,6 +1,6 @@
 package topic.backtracking;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PermutationsIITest {
 	PermutationsII test = new PermutationsII();

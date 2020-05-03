@@ -12,9 +12,8 @@ If no valid conversion could be performed, a zero value is returned.
  */
 package solution._1_10;
 
-import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author wx224

@@ -1,6 +1,6 @@
 package topic.hashtable;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class LongestHarmoniousSubsequenceTest {
 	LongestHarmoniousSubsequence test = new LongestHarmoniousSubsequence();

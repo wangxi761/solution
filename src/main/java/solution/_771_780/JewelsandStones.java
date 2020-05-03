@@ -1,15 +1,11 @@
 package solution._771_780;
 
-import static org.junit.Assert.*;
 
-import java.text.MessageFormat;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
-import org.junit.Test;
 
 public class JewelsandStones {
 

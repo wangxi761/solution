@@ -1,6 +1,6 @@
 package common;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import sun.misc.Unsafe;
 
 import java.io.*;

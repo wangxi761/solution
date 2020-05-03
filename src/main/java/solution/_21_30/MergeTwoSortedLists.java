@@ -1,6 +1,6 @@
 package solution._21_30;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import struct.ListNode;
 
 public class MergeTwoSortedLists {

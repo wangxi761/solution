@@ -1,6 +1,6 @@
 package topic.string;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class OptimalDivisionTest {
 	OptimalDivision test = new OptimalDivision();

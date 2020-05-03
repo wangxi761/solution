@@ -1,6 +1,6 @@
 package study.impl;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class FIFOQueueTest {
 	FIFO_Queue test = new FIFO_Queue();

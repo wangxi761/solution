@@ -1,6 +1,6 @@
 package solution._11_20;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import struct.ListNode;
 
 public class RemoveNthNodeFromEndofList {

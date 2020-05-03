@@ -1,6 +1,6 @@
 package topic.bitManipulation;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class ReverseBitsTest {
 	ReverseBits test = new ReverseBits();

@@ -1,7 +1,9 @@
 package solution._11_20;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ContainerWithMostWater {
 
@@ -9,7 +11,7 @@ public class ContainerWithMostWater {
 	public void test() throws Exception {
 		int[] arr = new int[] { 1, 2, 4, 3 };
 		int a = maxArea(arr);
-		Assert.assertTrue(a == 4);
+		assertTrue(a == 4);
 	}
 
 	public int maxArea(int[] height) {

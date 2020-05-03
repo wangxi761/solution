@@ -1,11 +1,11 @@
-package topic.backtracking;
+package topic.Backtracking;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StickersToSpellWordTest {
-	StickersToSpellWord test = new StickersToSpellWord();
+	topic.backtracking.StickersToSpellWord test = new topic.backtracking.StickersToSpellWord();
 	
 	@Test
 	public void minStickers() {
