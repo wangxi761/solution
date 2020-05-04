@@ -1,9 +1,9 @@
-package topic.backtracking;
+package topic.Backtracking;
 
 import org.junit.jupiter.api.Test;
 
 public class PermutationsIITest {
-	PermutationsII test = new PermutationsII();
+	topic.backtracking.PermutationsII test = new topic.backtracking.PermutationsII();
 	
 	@Test
 	public void permuteUnique() {

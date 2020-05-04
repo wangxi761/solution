@@ -3,7 +3,7 @@ package topic.backtracking;
 import org.junit.jupiter.api.Test;
 
 public class CombinationSumTest {
-	CombinationSum test = new CombinationSum();
+	topic.backtracking.CombinationSum test = new topic.backtracking.CombinationSum();
 	
 	@Test
 	public void combinationSum() {

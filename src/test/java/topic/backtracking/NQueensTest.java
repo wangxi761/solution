@@ -1,6 +1,7 @@
 package topic.backtracking;
 
 import org.junit.jupiter.api.Test;
+import topic.backtracking.NQueens;
 
 import java.util.List;
 

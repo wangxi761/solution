@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BinaryWatchTest {
-	BinaryWatch test = new BinaryWatch();
+	topic.backtracking.BinaryWatch test = new topic.backtracking.BinaryWatch();
 	
 	@Test
 	public void readBinaryWatch() {
