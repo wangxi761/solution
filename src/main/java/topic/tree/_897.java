@@ -1,26 +1,10 @@
 package topic.tree;
 
 
+import struct.TreeNode;
+
 public class _897 {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     TreeNode cur=null;
     public TreeNode increasingBST(TreeNode root) {
