@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 public class SumOfDigitsInBaseK {
     public int sumBase(int n, int k) {
-        int sum = n % k;
-        int res = n / k;
-        while (res > 9) {
-            sum += res % 10;
-            res = res / 10;
+        int res = 0;
+        while (n >= k) {
+            res += n % k;
+            n = n / k;
         }
-        return sum + res;
+        return res + n;
+
     }
 
     @Test
