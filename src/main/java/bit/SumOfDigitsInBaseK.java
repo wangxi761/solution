@@ -19,4 +19,5 @@ public class SumOfDigitsInBaseK {
         Assertions.assertEquals(9, sumBase(34, 6));
         Assertions.assertEquals(1, sumBase(10, 10));
     }
+
 }
