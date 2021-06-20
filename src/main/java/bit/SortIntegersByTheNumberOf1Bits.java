@@ -8,21 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SortIntegersByTheNumberOf1Bits {
 	public int[] sortByBits(int[] arr) {
-		int[] res = new int[arr.length];
-		Map<Integer, PriorityQueue<Integer>> map = new TreeMap<>(Comparator.naturalOrder());
-		for (int i : arr) {
-			int count = Integer.bitCount(i);
-			PriorityQueue<Integer> queue = map.computeIfAbsent(count, it -> new PriorityQueue<>(Comparator.naturalOrder()));
-			queue.offer(i);
-		}
-		int i = 0;
-		for (Map.Entry<Integer, PriorityQueue<Integer>> entry : map.entrySet()) {
-			PriorityQueue<Integer> value = entry.getValue();
-			while (!value.isEmpty()) {
-				res[i++] = value.poll();
-			}
-		}
-		return res;
+		return Arrays.stream(arr).boxed().sorted(Comparator.comparing(it -> Integer.bitCount(it) * 10000 + it)).mapToInt(Integer::intValue).toArray();
 	}
 	
 	@Test
