@@ -18,30 +18,35 @@ public class MaximumScoreWordsFormedByLetters {
 		return rec(words, letterCount, score, 0);
 	}
 	
-	public int rec(String[] words, int[] letterCount, int[] score, int index) {
-		int max = 0;
-		for (int i = index; i < words.length; i++) {
-			boolean valid = true;
-			int curScore = 0;
-			for (char c : words[i].toCharArray()) {
-				letterCount[c - 'a']--;
-				curScore += score[c - 'a'];
-				if (letterCount[c - 'a'] < 0) valid = false;
+	public int rec(String[] words, int[] letterCount, int[] scores, int index) {
+		if (index == words.length) return 0;
+		
+		boolean match = match(words[index], letterCount);
+		if (!match) {
+			return rec(words, letterCount, scores, index + 1);
+		} else {
+			int score = 0;
+			int[] tmp = Arrays.copyOf(letterCount, letterCount.length);
+			for (char c : words[index].toCharArray()) {
+				tmp[c - 'a']--;
+				score += scores[c - 'a'];
 			}
-			if (valid) {
-				curScore += rec(words, letterCount, score, index + 1);
-				max = Math.max(max, curScore);
-			}
-			for (char c : words[i].toCharArray()) {
-				letterCount[c - 'a']++;
-				curScore=0;
-			}
+			
+			int noUse = rec(words, letterCount, scores, index + 1);
+			int use = rec(words, tmp, scores, index + 1) + score;
+			return Math.max(use, noUse);
 		}
-		return max;
 	}
 	
 	public boolean match(String s, int[] count) {
-	
+		int[] sCount = new int[26];
+		for (char c : s.toCharArray()) {
+			sCount[c - 'a']++;
+			if (sCount[c - 'a'] > count[c - 'a']) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	
