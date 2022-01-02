@@ -2,7 +2,7 @@ package util;
 
 public class ClassNameGen {
 	public static void main(String[] args) {
-		String origin_name = "Two Sum";
+		String origin_name = "N-th Tribonacci Number";
 		StringBuilder sb = new StringBuilder();
 		char[] chars = origin_name.toCharArray();
 		boolean firstLetter = false;
