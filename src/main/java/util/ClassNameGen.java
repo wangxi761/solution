@@ -2,7 +2,7 @@ package util;
 
 public class ClassNameGen {
 	public static void main(String[] args) {
-		String origin_name = "N-th Tribonacci Number";
+		String origin_name = "Different Ways to Add Parentheses";
 		StringBuilder sb = new StringBuilder();
 		char[] chars = origin_name.toCharArray();
 		boolean firstLetter = false;
