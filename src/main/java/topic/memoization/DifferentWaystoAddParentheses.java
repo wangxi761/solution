@@ -2,6 +2,7 @@ package topic.memoization;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import util.StrUtil;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -30,20 +31,30 @@ public class DifferentWaystoAddParentheses {
             }
             i = j;
         }
-        return compute(nums, ops, 0, nums.size() - 1);
+        return compute(nums, ops);
     }
+
     public List<Integer> compute(List<Integer> nums, List<Character> ops) {
-        List<Integer>[][] dp=new ArrayList[nums.size()][nums.size()];
+        List<Integer>[][] dp = new ArrayList[nums.size()][nums.size()];
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp.length; j++) {
+                if (i + j >= dp.length) continue;
+                dp[j][i + j] = new ArrayList<>();
+                if (i == 0) {
+                    dp[j][i + j].add(nums.get(j));
+                } else {
+                    for (int k = 0; k < i; k++) {
+                        for (Integer ls : dp[j][j + k]) {
+                            for (Integer rs : dp[j + k + 1][j + i]) {
+                                Character op = ops.get(j+k);
+                                dp[j][i + j].add(calc(ls, rs, op));
+                            }
+                        }
+                    }
+                }
             }
         }
-
-        for (int i = 0; i < nums.size(); i++) {
-
-        }
-
-        return null;
+        return dp[0][nums.size() - 1];
     }
 
     public List<Integer> compute(List<Integer> nums, List<Character> ops, int left, int right) {
