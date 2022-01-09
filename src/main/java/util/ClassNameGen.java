@@ -2,7 +2,7 @@ package util;
 
 public class ClassNameGen {
 	public static void main(String[] args) {
-		String origin_name = "Different Ways to Add Parentheses";
+		String origin_name = "Check if Every Row and Column Contains All Numbers\n";
 		StringBuilder sb = new StringBuilder();
 		char[] chars = origin_name.toCharArray();
 		boolean firstLetter = false;
