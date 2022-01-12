@@ -2,7 +2,7 @@ package util;
 
 public class ClassNameGen {
 	public static void main(String[] args) {
-		String origin_name = "Sum of Root To Leaf Binary Numbers";
+		String origin_name = "Insert into a Binary Search Tree\n";
 		StringBuilder sb = new StringBuilder();
 		char[] chars = origin_name.toCharArray();
 		boolean firstLetter = false;
