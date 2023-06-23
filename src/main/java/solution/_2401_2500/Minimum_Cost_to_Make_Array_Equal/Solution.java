@@ -27,28 +27,10 @@ class Solution {
 	}
 	
 	public long minCost(int[] nums, int[] cost) {
-		boolean equals = true;
-		for (int i = 1; i < nums.length; i++) {
-			if (nums[i - 1] != nums[i]) {
-				equals = false;
-				break;
-			}
-		}
-		if (equals) return 0;
-		
-		long[][] dp = new long[nums.length][1000000];
-		
-		long min = Long.MAX_VALUE;
-		for (int i = 0; i < nums.length; i++) {
-			int res = nums[i];
-			long sum = 0;
-			for (int j = 0; j < nums.length; j++) {
-				sum += Math.abs((long) (res - nums[j])) * cost[j];
-			}
-			min = Math.min(min, sum);
-		}
-		return min;
+		int res = 0;
+		return res;
 	}
+	
 	
 	@Test
 	public void test() {
