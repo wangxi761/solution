@@ -2,6 +2,7 @@ package struct;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Objects;
 import java.util.Stack;
 
 public class TreeNode {
@@ -55,10 +56,17 @@ public class TreeNode {
 		return builder;
 	}
 	
-	static class CodeTest {
-		public static void main(String[] args) {
-			TreeNode treeNode = TreeNode.create(1, 2, 3, null, 4, 5, 6);
-			System.out.println(treeNode);
-		}
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		TreeNode treeNode = (TreeNode) o;
+		return val == treeNode.val && Objects.equals(left, treeNode.left) && Objects.equals(right, treeNode.right);
 	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(val, left, right);
+	}
+	
 }
