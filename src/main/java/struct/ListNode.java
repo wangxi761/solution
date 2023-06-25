@@ -25,7 +25,16 @@ public class ListNode {
 	
 	@Override
 	public String toString() {
-		return val + (next == null ? "" : " -> " + next);
+		return print(new StringBuilder()).toString();
+	}
+	
+	private StringBuilder print(StringBuilder builder) {
+		builder.append(val);
+		if (next != null) {
+			builder.append(" -> ");
+			next.print(builder);
+		}
+		return builder;
 	}
 	
 	@Override
@@ -53,4 +62,10 @@ public class ListNode {
 		return head.next;
 	}
 	
+	static class CodeTest {
+		public static void main(String[] args) {
+			ListNode node = ListNode.create(1, 2, 3, 4, 5);
+			System.out.println(node);
+		}
+	}
 }
