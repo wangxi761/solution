@@ -66,6 +66,13 @@ public class TreeNode {
 		return root;
 	}
 	
+	public static TreeNode get(TreeNode root, Integer num) {
+		if (root == null) return null;
+		if (root.val == num) return root;
+		TreeNode left = get(root.left, num);
+		TreeNode right = get(root.right, num);
+		return left == null ? right : left;
+	}
 	
 	@Override
 	public String toString() {
