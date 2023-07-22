@@ -1,4 +1,4 @@
-package struct;
+package leetcode.struct;
 
 
 import java.util.ArrayList;

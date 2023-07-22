@@ -1,4 +1,4 @@
-package struct;
+package leetcode.struct;
 public class Node {
 	public int val;
 	public Node left;

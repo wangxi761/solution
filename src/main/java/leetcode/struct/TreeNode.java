@@ -1,6 +1,4 @@
-package struct;
-
-import org.junit.jupiter.api.Test;
+package leetcode.struct;
 
 import java.util.*;
 

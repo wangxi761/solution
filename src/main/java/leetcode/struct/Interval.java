@@ -1,4 +1,4 @@
-package struct;
+package leetcode.struct;
 
 public class Interval {
     public int start;
