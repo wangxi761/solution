@@ -4,6 +4,7 @@ package leetcode.struct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class ListNode {
 	public int val;
@@ -30,7 +31,19 @@ public class ListNode {
 	
 	@Override
 	public String toString() {
-		return print(new StringBuilder()).toString();
+//		return print(new StringBuilder()).toString();
+		return print(new ArrayList<>());
+	}
+	
+	private String print(List<ListNode> list) {
+		if (list.contains(this)) {
+			return list.stream().map(node -> String.valueOf(node.val)).collect(Collectors.joining(" -> "));
+		}
+		list.add(this);
+		if (next == null) {
+			return list.stream().map(node -> String.valueOf(node.val)).collect(Collectors.joining(" -> "));
+		}
+		return next.print(list);
 	}
 	
 	private StringBuilder print(StringBuilder builder) {
