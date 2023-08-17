@@ -67,6 +67,10 @@ public class ListNode {
 		return head.next;
 	}
 	
+	public static ListNode fromArray(int[] src) {
+		return create(src);
+	}
+	
 	static class CodeTest {
 		public static void main(String[] args) {
 			ListNode node = ListNode.create(1, 2, 3, 4, 5);
