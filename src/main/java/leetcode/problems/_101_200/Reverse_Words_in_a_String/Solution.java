@@ -32,13 +32,20 @@ class Solution {
 		
 		reverse(ch, 0, slow - 1);
 		int left = 0, right = 0;
-		while (right < slow) {
-			while (right < slow && ch[right] != ' ') {
-				right++;
+//		while (right < slow) {
+//			while (right < slow && ch[right] != ' ') {
+//				right++;
+//			}
+//			reverse(ch, left, right - 1);
+//			right++;
+//			left = right;
+//		}
+		for (int i = 0; i <= slow; i++) {
+			if (i != slow && ch[i] != ' ') {
+				continue;
 			}
-			reverse(ch, left, right - 1);
-			right++;
-			left = right;
+			reverse(ch, left, i - 1);
+			left = i + 1;
 		}
 		return new String(ch, 0, slow);
 	}
